@@ -1,0 +1,37 @@
+    # The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+    modLoader="javafml"
+    # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+    # Forge for 1.16.3 is version 34
+    loaderVersion="[34,)"
+    # A URL to refer people to when problems occur with this mod
+    issueTrackerURL="github.com/MinecraftForge/MinecraftForge/issues"
+    # If the mods defined in this file should show as seperate resource packs
+    showAsResourcePack=false
+
+    [[mods]]
+      modId="monk-mod"
+      version="0.1"
+      displayName="Monk Mod 1.16.5"
+      updateJSONURL="placeholdercurseforgeurl.com" #TODO Update changelog json link once the mod is done
+      displayURL="placeholdercurseforgeurl.com" #TODO Update the mod homepage once the mod is done
+      logoFile="placeholder/image/path/logo.png" #TODO Update the logo image once the mod is done (must be placed in the root resource folder, not a subfolder)
+      credits="Forge Documentation, SCCWW members, and myself for actually going through with this idea"
+      authors="panchi64"
+      description='''
+      Embark on a pilgrimage to surpass the limits of your body, mind and soul. Learn the way of the monk and become
+      a very powerful entity in Minecraft!
+      '''
+
+      [[dependencies.monk-mod]]
+        modId="forge"
+        mandatory=true
+        versionRange="[34,)"
+        ordering="NONE"
+        side="BOTH"
+
+      [[dependencies.monk-mod]]
+        modId="minecraft"
+        mandatory=true
+        versionRange="[1.16.3]"
+        ordering="NONE"
+        side="BOTH"
